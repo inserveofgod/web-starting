@@ -25,6 +25,64 @@ $(function () {
     $('.dropdown').on('hide.bs.dropdown', function () {
         $(this).find('.dropdown-menu').stop(true, true).slideUp(anim_ms)
     })
+
+    /* swipers */
+    const swiper_options = {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: (window.innerWidth > 768) ? true : false,
+        spaceBetween: 10,
+        slidesPerView: 1,
+        speed: 1500,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    }
+
+    const swiper_breakpoints = {
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 15
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 35
+            },
+            1200: {
+                slidesPerView: 5,
+                spaceBetween: 40
+            }
+        }
+    }
+
+    /* inputmasks */
+    $("input[type='tel']").inputmask("+9{1,4} 999 999 99 99")
+
+    /* password toggler */
+    $("input ~ .fa").on('click', function () {
+        let password_hidden = $(this).siblings("input").attr("type") === 'password'
+        if (password_hidden) {
+            $(this).removeClass('fa-eye-slash').addClass('fa-eye')
+            $(this).siblings("input").attr("type", "text");
+        } else {
+            $(this).removeClass('fa-eye').addClass('fa-eye-slash')
+            $(this).siblings("input").attr("type", "password");
+        }
+    })
 })
 
 /* preloader */
