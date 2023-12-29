@@ -1,0 +1,12 @@
+# editors and IDEs
+/.vs/
+/.vscode/
+/.idea/
+
+# client side files
+/uploads/**
+
+# modules
+/node_modules/
+
+# sensitive files

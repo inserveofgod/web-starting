@@ -1,0 +1,14 @@
+// Include any default variable overrides here (though functions won't be available)
+
+/* colors */
+$primary: #1a7bd1;
+/* colors end */
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+/* custom overwrites */
+.dropdown-menu {
+    z-index: 3;
+}
