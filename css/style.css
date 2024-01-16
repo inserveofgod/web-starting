@@ -333,7 +333,8 @@ p {
 
 header,
 article,
-section {
+section,
+aside {
     margin-bottom: 6rem;
 }
 
@@ -439,7 +440,8 @@ section {
 @media screen and (max-width: 992px) {
     header,
     article,
-    section {
+    section,
+    aside {
         margin-bottom: 5rem;
     }
 }
@@ -448,7 +450,8 @@ section {
 @media screen and (max-width: 768px) {
     header,
     article,
-    section {
+    section,
+    aside {
         margin-bottom: 4rem;
     }
 }
@@ -457,7 +460,8 @@ section {
 @media screen and (max-width: 578px) {
     header,
     article,
-    section {
+    section,
+    aside {
         margin-bottom: 3rem;
     }
 }
@@ -466,7 +470,8 @@ section {
 @media screen and (max-width: 400px) {
     header,
     article,
-    section {
+    section,
+    aside {
         margin-bottom: 2rem;
     }
 }

@@ -132,17 +132,19 @@
     <script src="node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="node_modules/lightbox2/dist/js/lightbox.min.js"></script>
     <script>
-        new PureCounter({
-            separator: '.',
-            duration: 3
-        })
+        $(function () {
+            new PureCounter({
+                separator: '.',
+                duration: 3
+            })
 
-        AOS.init();
+            AOS.init();
 
-        lightbox.option({
-            resizeDuration: 500,
-            imageFadeDuration: 500,
-            fadeDuration: 500,
+            lightbox.option({
+                resizeDuration: 500,
+                imageFadeDuration: 500,
+                fadeDuration: 500,
+            })
         })
     </script>
 
