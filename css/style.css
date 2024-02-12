@@ -435,6 +435,10 @@ aside {
     transform: scale(1.1);
     transition: var(--trans);
 }
+
+.background-scalable:hover > .background-overlay {
+    background: none;
+}
 /* backgrounds end */
 
 /* classes end */
