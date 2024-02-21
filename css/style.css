@@ -385,6 +385,18 @@ aside {
     transition: var(--trans);
 }
 
+#full {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#login {
+    margin: 6rem 0;
+}
+
 /* id end */
 
 /* classes */
@@ -465,6 +477,10 @@ aside {
     aside {
         margin-bottom: 5rem;
     }
+
+    #login {
+        margin: 5rem 0;
+    }
 }
 
 /* for tablets */
@@ -474,6 +490,10 @@ aside {
     section,
     aside {
         margin-bottom: 4rem;
+    }
+
+    #login {
+        margin: 4rem 0;
     }
 }
 
@@ -485,6 +505,10 @@ aside {
     aside {
         margin-bottom: 3rem;
     }
+
+    #login {
+        margin: 3rem 0;
+    }
 }
 
 /* for small phones */
@@ -494,6 +518,10 @@ aside {
     section,
     aside {
         margin-bottom: 2rem;
+    }
+
+    #login {
+        margin: 2rem 0;
     }
 }
 
