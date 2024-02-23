@@ -5,17 +5,17 @@ const anim_ms = 250
 
 $(function () {
     /* go top button */
-    $('#gotop').on('click', function () {
+    $('#gotop').hide(0).on('click', function () {
         $('html').scrollTop(0)
     })
 
     $(window).on('scroll', function () {
         if ($(this).scrollTop() > 500) {
-            $('#gotop').fadeIn().css('display', 'flex');
+            $('#gotop').fadeIn(anim_ms)
         } else {
-            $('#gotop').fadeOut(anim_ms);
+            $('#gotop').fadeOut(anim_ms)
         }
-    });
+    })
 
     /* slide effects for dropdowns */
     $('.dropdown').on('show.bs.dropdown', function () {
@@ -106,10 +106,10 @@ $(function () {
         let password_hidden = $(this).siblings("input").attr("type") === 'password'
         if (password_hidden) {
             $(this).removeClass('fa-eye-slash').addClass('fa-eye')
-            $(this).siblings("input").attr("type", "text");
+            $(this).siblings("input").attr("type", "text")
         } else {
             $(this).removeClass('fa-eye').addClass('fa-eye-slash')
-            $(this).siblings("input").attr("type", "password");
+            $(this).siblings("input").attr("type", "password")
         }
     })
 
