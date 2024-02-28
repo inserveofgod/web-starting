@@ -409,17 +409,18 @@ aside {
 }
 
 .background-img {
-    position: absolute;
-    transition: var(--trans);
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .background-text {
-    position: relative;
+    position: absolute;
     z-index: 1;
     height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .background-overlay {
@@ -432,6 +433,7 @@ aside {
     right: 0;
     z-index: 0;
     background: linear-gradient(45deg, rgba(0, 0, 0, .4) 40%, rgba(0, 0, 0, .7) 100%);
+    transition: var(--trans);
 }
 
 .background-scalable {
@@ -449,7 +451,9 @@ aside {
 }
 
 .background-scalable:hover > .background-overlay {
-    background: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--trans);
 }
 /* backgrounds end */
 
