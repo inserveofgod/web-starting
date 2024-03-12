@@ -499,6 +499,12 @@ aside {
     #login {
         margin: 4rem 0;
     }
+
+    #gotop {
+        width: 48px;
+        height: 48px;
+        font-size: 1.25rem;
+    }
 }
 
 /* for mobile phones */
